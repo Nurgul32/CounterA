@@ -1,0 +1,21 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>
+    Welcome to my site!
+</h1>
+<body style="background-color:lightpink;">
+</body>
+<p>
+    get some info
+    <a href={{url_for('upload')}} target="_blank">UPLOAD</a>
+</p>
+{% for country in dictionary %}
+{{dictionary[country]}} столица страны {{country}}
+<br>
+{% endfor %}
+
+
+
+{% endblock %}

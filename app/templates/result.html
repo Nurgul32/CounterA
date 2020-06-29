@@ -1,0 +1,22 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>
+    Welcome to my site!
+</h1>
+<body style="background-color:lightpink;">
+</body>
+<p>
+    get some info
+    <a href={{url_for('upload')}} target="_blank">UPLOAD</a>
+</p>
+<p>
+Уважаемый {{data.name}}! На вашу почту {{data.email}} мы отправим результат
+</p>
+<br>
+
+
+
+
+{% endblock %}
